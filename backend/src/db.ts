@@ -14,6 +14,12 @@ export const initDb = async () => {
         email TEXT UNIQUE,
         password TEXT
     )`);
+
+    await db.exec(`CREATE TABLE IF NOT EXISTS todos (
+        id INTEGER PRIMARY KEY AUTOINCREMENT,
+        task TEXT,
+        completed BOOLEAN DEFAULT 0
+    )`);
 };
 
 export const getDb = () => db;
