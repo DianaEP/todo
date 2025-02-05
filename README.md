@@ -1,6 +1,6 @@
 # React + TypeScript + Vite
 
-# Todo App (Frontend and Backend)
+# Todo App
 
 This is a simple **Todo** application built with **Node.js**, **TypeScript**, **SQLite** for the backend, and a future **frontend** to be developed. The purpose of this project is to learn and apply **TypeScript**.
 

@@ -13,8 +13,8 @@ interface TodosContextProviderProps {
 export const TodosContextProvider: React.FC<TodosContextProviderProps> = (props) => {
     const[todos, setTodos] = useState<Todo[]>([]);
 
-    const addTodoHandler = (todoText: string) =>{
-        const newTodo = new Todo(todoText);
+    const addTodoHandler = (task: string) =>{
+        const newTodo = new Todo(task);
         setTodos((prev) => {
         return [...prev, newTodo]
         })

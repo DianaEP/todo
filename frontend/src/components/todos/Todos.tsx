@@ -9,7 +9,7 @@ const Todos: React.FC = () => {
     return(
         <ul className={classes.todos}>
             {contextTodos.items.map((item) => (
-                <TodoItem key={item.id} text={item.text} onRemove={() => contextTodos.removeTodo(item.id)}/>
+                <TodoItem key={item.id} task={item.task} onRemove={() => contextTodos.removeTodo(item.id)}/>
             ))}
         </ul>
     )
